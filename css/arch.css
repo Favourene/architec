@@ -1,0 +1,464 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    width: 100%;
+    height: 40px;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    background-color: white ;
+}
+nav .logo{
+    flex: 1;
+    color: #f05e24;
+    margin-left: 10px;
+}
+
+nav ul{
+    margin-left: -180px;
+    flex: 2;
+    display: flex;
+    justify-content: space-evenly;
+}
+a{
+    text-decoration: none;
+    padding-right: 20px;
+    color: rgba(121, 114, 114, 0.747);
+}
+a:hover{
+    border-bottom: 1px solid lime;
+}
+input{
+    padding: 5px;
+    border-style: none;
+    margin-right: 30px;
+}
+.fa-search{
+    color: rgba(121, 114, 114, 0.747);
+    margin-left: -50px;
+    margin-right: 30px;
+}
+#sign{
+    background: #f05e24;
+    color: white;
+    margin-right: 30px;
+    padding: 10px;
+    border-radius: 5px;
+}
+nav .menu{
+    font-size: 2.5em;
+    display: none;
+}
+/*------SHRINKS THE NAV BAR FOR SMALLER SCREENS-------*/
+@media (max-width:900px){
+    nav ul{
+        position: fixed;
+        top:100px;
+        right: -100%;
+        background: whitesmoke;
+        height: calc(100vh - 100px);
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        transition: right 0.5s linear;
+    }
+    a{
+        padding-bottom: 30px;
+    }
+    .lap, .laps{
+        display: flex;
+        flex-direction: column;
+    }
+    nav .menu{
+        display: block;
+        width: 35px;
+        text-align: center;
+    }
+    .menu div{
+        height: 5px;
+        background-color: rgba(218, 25, 25, 0.74);
+        margin: 5px 0px;
+        transition: .3s;
+    }
+    .menu:hover div{
+        width: 30px;
+    }
+    .one{
+        width: 30px;
+    }
+    .two{
+        width: 20px;
+    }
+    .three{
+        width: 25px;
+    }
+    #chk1:checked ~ ul{
+        right: 0;
+    }
+}
+@media (max-width:500px){
+    nav .logo{
+        margin-left: 10px;
+    }
+    .logo h1{
+        font-size: 1.5em;
+    }
+    nav ul{
+        width: 100%;
+    }
+    #contact .content{
+        padding: 20px;
+    }
+}
+input[type="checkbox"]{
+    display: none;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+.first{
+    padding: 100px 5%;
+}
+.h1{
+    font-size: 100px;
+    margin-bottom: 40px;
+}
+span{
+    color: #f05e24;
+}
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+.text{
+    width: 25%;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+.text  p{
+    font-size: 20px;
+}
+
+button{
+    color: white;
+    background: #f05e24;
+    border-radius: 4px;
+    padding: 10px;
+    border-style: none;
+    margin-top: 30px;
+}
+button:hover{
+    background: none;
+    border: 1px solid #f05e24;
+    color: #f05e24;
+}
+.img{
+    width: 60%;
+    height: 60%;
+    float: right;
+    overflow: hidden;
+    
+}
+.img img:hover{
+    transition: all 1s ease;
+    transform: scale(1.3);
+}
+.second{
+    padding: 0 2%;
+}
+
+.word{
+    margin-top: 50px;
+    font-size: 30px;
+    text-align: center;
+}
+.word h2{
+    margin-bottom: 40px;
+}
+.swiper-container {
+    width: 100%;
+    height: 60%;
+
+  }
+  .swiper-container img{
+      width: 100%;
+  }
+  .swiper-slide-active, .swiper-slide-prev, .swiper-slide-next{
+    width: 30% !important;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    width: 40% !important;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .third{
+    margin-left: 5%;
+  }
+.third h2{
+    margin-top: 100px;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.wrap2{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.la2{
+    margin-left: 70px;
+    width: 30%;
+    margin-bottom: 70px;
+}
+.con{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.con .icon{
+    width: 20%;
+    font-size: 30px;
+}
+.icon .fa{
+     color: #f05e24;
+    width: 100px;
+}
+
+.con p{
+    width: 60%;
+    font-size: 16px;
+}
+.la2 button{
+    text-align: center;
+}
+.fourth{
+    margin-left: 10px;
+    width: 90%;
+    margin-top: 100px;
+    background: rgba(187, 180, 180, 0.205);
+    height: 80vh;
+}
+.fourth h2{
+    padding-top: 50px;
+    margin-left: 70px;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.cone .fa{
+    color: #f05e24;
+    font-size: 30px;
+    padding-right: 20px;
+}
+.cone  .fa-mars-stroke-h{
+    font-size: 20px;
+    padding: 0 10px;
+    color: black;
+}
+.cone{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 400px;
+}
+.cone #pas{
+    
+    width: 50%;
+    font-size: 20px;
+}
+.fifth{
+    margin-top: 60px;
+    margin-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.ma{
+    width: 60%;
+    overflow: hidden;
+}
+.ma  img{
+    width: 700px;
+}
+.ma img:hover{
+    transition: all 1s ease;
+    transform: scale(1.3);
+}
+.textt{
+    margin-top: 60px;
+    width: 30%;
+    text-align: center;
+}
+.textt h2 {
+    font-size: 40px;
+}
+.sixth{
+    margin-top: 70px;
+    margin-bottom: 180px;
+    margin-left: 10px;
+}
+.sixth  h1{
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+.logos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+}
+.logos img{
+    padding-top: 30px;
+}
+.last{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    padding-right: 20px;
+}
+.last h1{
+    color: #f05e24;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 900px){
+    .first{
+        text-align: center;
+    }
+    .wrap{
+        flex-wrap: wrap-reverse;
+    }
+    .img, .text{
+        width: 100%;
+    }
+    .la2{
+        width: 100%;
+    }
+    .la2 #pr{
+        display: flex;
+        margin-top: 30px;
+    }
+    .con{
+        width: 30%;
+    }
+}
+
+
+@media  screen and (max-width: 600px){
+    .first{
+        padding: 100px 10px;
+    }
+    .wrap{
+        flex-wrap: wrap-reverse;
+    }
+    .h1{
+        font-size: 50px;
+        margin-bottom: 5px;
+    }
+    .textt{
+        width: 100%;
+    }
+    .text{
+        margin-right: 0px;
+    }
+    #pic{
+        width: 95%;
+    }
+    .la2{
+        width: 90%;
+    }
+    .second h2{
+        font-size: 30px;
+    }
+    .third{ 
+        margin-left: 10px;
+    }
+    .text{
+        margin-top: 20px;
+    }
+    .swiper-container {
+        width: 95%;
+        height: 250px;
+    
+      }
+      .swiper-slide{
+          width: 100% !important;
+      }
+      .swiper-container img{
+          width: 100%;
+      }
+      .la2{
+          margin-left: 10px;
+          margin-top: 20px;
+          margin-bottom: 0;
+      }
+      .la2 #pr{
+          flex-direction: column;
+      }
+      .con{
+          width: 100%;
+      }
+      .third h2{
+          font-size: 30px;
+      }
+      .fourth h2, .fifth{
+          margin-left: 10px;
+          padding-top: 0;
+      }
+      .cone{
+          margin-left: 10px;
+      }
+     .cone #pas{
+          width: 100%;
+          font-size: 16px;
+      }
+      .cone .fa{
+          font-size: 13px;
+      }
+      .fourth{
+          width: 90%;
+          height: 400px;
+      }
+      .ma  img{
+        width: 100%;
+    }
+    .textt h2{
+        font-size: 30px;
+    }
+    .ma, .textt{
+        width: 90%;
+    }
+    .sixth h1{
+        text-align: center;
+    }
+    .logos img{
+        padding-right: 20px;
+    }
+    .sixth{
+        margin-bottom: 30px;
+    }
+}
